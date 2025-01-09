@@ -164,7 +164,7 @@ Public Class Form1
             MockDomeController.SetCurrentActivity("Idle")
             Load_Status()
         Else 'Partially open slot
-            If MockDomeController.GetSlotPosition() = 0 AndAlso Not 0 < MockDomeController.GetSlotPosition() < 100 Then
+            If MockDomeController.GetSlotPosition() = 0 Then
                 MockDomeController.SetCurrentActivity("Opening Dome Partially")
                 Load_Status()
                 MockDomeController.OpenDomePartial(50)
