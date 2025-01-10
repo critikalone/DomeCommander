@@ -230,7 +230,7 @@ Public Class Form1
                 MessageBox.Show("Rotation angle must be between 0 and 359!.", "Invalid Angle", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                 Return
             End If
-            Dim originalImage As Image = Image.FromFile("C:\Users\n1cko\source\repos\DomeCommander\DomeCommander\Resources\dome.png")
+            Dim originalImage As Image = Image.FromFile("dome.png")
             Dim rotatedImage As New Bitmap(originalImage.Width, originalImage.Height)
             rotatedImage.SetResolution(originalImage.HorizontalResolution, originalImage.VerticalResolution)
 
